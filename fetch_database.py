@@ -66,22 +66,6 @@ class getData():
             data = pd.read_sql(sql, cnxn) 
             data.to_csv(f'/data/{t}.csv')
 
-        
-    
-    # def set_odbc(self, odbc_driver):
-    #     conn = pyodbc.connect(DRIVER={odbc_driver},
-    #                             SERVER,
-    #                             DATABASE,
-    #                             UID,
-    #                             PWD='+clave)
-    #     conn = pyodbc.connect(f'DRIVER={odbc_driver};SERVER={}')
-    #     cnxn = pyodbc.connect('DRIVER={Devart ODBC Driver for Firebird};Server=myserver;Database=mydatabase;Port=myport;User ID=myuserid;Password=mypassword;')
-    #     conn = pyodbc.connect()
-    #     cursor = conn.cursor()
-    #     cursor.execute('select * from tracking_sales')
-    #     for fila in cursor.fetchall():
-    #     print(row)
-
 
 #firebird = config(DSN='test', client='bryan', user='bryan', pwd='123')
 #firebird.init()
@@ -94,3 +78,4 @@ class getData():
 #config().update('user_info', 'pwd', '123123')
 # data = getData()
 # data.fetchData()
+#https://github.com/hrabe/odbc-on-macos/blob/master/docs/postgresql.md
